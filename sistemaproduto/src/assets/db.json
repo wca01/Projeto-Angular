@@ -1,0 +1,21 @@
+{
+    "produtos": [
+      {
+        "nome": "Terno",
+        "codigobarras": "1234",
+        "preco": 1.800
+      },
+      {
+        "id": 2,
+        "nome": "Camisa social",
+        "codigobarras": "456",
+        "preco": 194.9
+      },
+      {
+        "id": 3,
+        "nome": "Calça sport",
+        "codigobarras": "789",
+        "preco": 177.38
+      }
+    ]
+  }
