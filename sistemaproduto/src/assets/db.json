@@ -1,21 +1,19 @@
 {
-    "produtos": [
-      {
-        "nome": "Terno",
-        "codigobarras": "1234",
-        "preco": 1.800
-      },
-      {
-        "id": 2,
-        "nome": "Camisa social",
-        "codigobarras": "456",
-        "preco": 194.9
-      },
-      {
-        "id": 3,
-        "nome": "Calça sport",
-        "codigobarras": "789",
-        "preco": 177.38
-      }
-    ]
-  }
+  "produtos": [
+    {
+      "nome": "Terno",
+      "codigobarras": "900123",
+      "preco": 1.8
+    },
+    {
+      "nome": "Camisa social",
+      "codigobarras": "900456",
+      "preco": 194.9
+    },
+    {
+      "nome": "Calça sport",
+      "codigobarras": "900789",
+      "preco": 177.38
+    }
+  ]
+}

@@ -1,1 +1,33 @@
 <p>cadastro-de-produtos works!</p>
+<div class="card add-produto">
+    <h5 class="card-header">Adicionar produto</h5>
+    <div class="card-body">
+        <form id="add-form" (ngSubmit)="f.form.valid && salvaProduto(f)" #f="ngForm" novalidate>
+          <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" [(ngModel)]="produto.nome" id="nome" name="nome" #nome="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && nome.invalid }" placeholder="Digite o produto">
+              <div *ngIf="f.submitted && nome.invalid" class="invalid-feedback">
+                  <div *ngIf="nome.errors?.['required']">Nome é obrigatório </div>
+              </div>
+          </div>
+            <div class="form-group">
+              <label for="codigobarras">Código de barras</label>
+              <input type="text" [(ngModel)]="produto.codigobarras" id="codigobarras" name="codigobarras" #codigobarras="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && codigobarras.invalid }" placeholder="Digite código de barras">
+              <div *ngIf="f.submitted && codigobarras.invalid" class="invalid-feedback">
+                  <div *ngIf="codigobarras.errors?.['required']">Código de barras é obrigatório!</div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="preco">Preço</label>
+              <input type="number" [(ngModel)]="produto.preco" id="preco" name="preco" #preco="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && preco.invalid }" placeholder="Digite o preço">
+              <div *ngIf="f.submitted && preco.invalid" class="invalid-feedback">
+                  <div *ngIf="preco.errors?.['required']">Preço é obrigatório</div>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-warning btn-sm btn-add-produto">Salvar</button>
+          <button type="reset" class="btn btn-secondary btn-sm ml-1 btn-add-produto" (click)="goBack()">Voltar</button>
+        </form>
+      </div>
+      </div>
+
+ 

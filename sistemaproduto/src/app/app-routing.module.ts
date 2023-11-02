@@ -4,6 +4,7 @@ import { ListagemDeProdutosComponent } from './pages/listagem-de-produtos/listag
 import { HomeComponent } from './pages/home/home.component';
 import { CadastroDeProdutosComponent } from './pages/cadastro-de-produtos/cadastro-de-produtos.component';
 import { EdicaoDeProdutosComponent } from './pages/edicao-de-produtos/edicao-de-produtos.component';
+import { ExcluirComponent } from './pages/excluir/excluir.component';
 
 const routes: Routes = [
   {
@@ -13,10 +14,13 @@ const routes: Routes = [
     path: 'produtos', component: ListagemDeProdutosComponent
   },
   {
-    path: 'Produto/cadastrar', component: CadastroDeProdutosComponent
+    path: 'produtos/cadastrar', component: CadastroDeProdutosComponent
   },
   {
-    path: 'produto/editar/:nome', component: EdicaoDeProdutosComponent
+    path: 'produtos/editar', component: EdicaoDeProdutosComponent
+  },
+  {
+    path: 'produtos/excluir', component: ExcluirComponent
   }
 
 ];
